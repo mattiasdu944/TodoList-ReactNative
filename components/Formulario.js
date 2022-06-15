@@ -17,7 +17,7 @@ const Formulario = ({setTareas, tareas}) => {
             titulo,
             descripcion,
         }
-        
+
         setTareas([...tareas, tarea]);
 
         setTitulo('');
@@ -40,6 +40,7 @@ const Formulario = ({setTareas, tareas}) => {
                     placeholderTextColor={'#608385'}
                     value={descripcion}
                     onChangeText={(descripcion) => setDescripcion(descripcion)}
+                    multiline
                 />
             </View>
             
